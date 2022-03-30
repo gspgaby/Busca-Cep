@@ -14,7 +14,7 @@ Implementar uma busca cep fazendo um frontend em react e um backend em node. O b
 Repositorio api:
 
 ```sh
-git clone https://github.com/gspgaby/Node-Busca-Cep
+git clone https://github.com/gspgaby/Node-Busca-Cep.git
 ```
 
 Repositorio frontend:
