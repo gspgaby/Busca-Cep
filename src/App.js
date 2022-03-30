@@ -68,12 +68,12 @@ function App() {
             sx={{margin: '5px'}}
           />
         </div>  
-        <Button onClick={searchCep} sx={{color:'#000', margin: '10px'}}>
+        <Button onClick={searchCep} sx={{color:'#FFFF', margin: '10px', backgroundColor:'#696969'}}>
           <SearchIcon/>Buscar
         </Button>
       </Box>
-    <Box>
-      {Object.keys(data).length > 1 && (
+      <Box>
+        {Object.keys(data).length > 1 && (
         <>
           <TextField
               id="outlined"
@@ -102,7 +102,7 @@ function App() {
                 value={data.state}/>
         </>        
       )}
-            </Box>
+      </Box>
     </Grid>
   );
 }
