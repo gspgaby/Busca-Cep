@@ -46,8 +46,12 @@ function App() {
       justify='center'
       alignItems='center'
       direction='column'
-      sx={{minHeight: '100vh', padding:'50px', backgroundColor: '#F0FFF0'}}
-      >
+      sx={{
+        minHeight: '100vh', 
+        padding:'50px', 
+        backgroundColor: '#F0FFF0'
+      }}
+    >
       <Box
         sx={{
           borderRadius: '10px',
@@ -56,8 +60,21 @@ function App() {
           padding: '10px',
         }}
       >
-        <Typography sx={{margin: '10px', fontSize: '24px', fontWeight: 'bold'}}>Buscar CEP</Typography>  
-        <Typography sx={{margin: '10px', fontSize: '16px'}}>Digite o CEP que deseja encontrar</Typography>  
+        <Typography 
+          sx={{
+            margin: '10px', 
+            fontSize: '24px', 
+            fontWeight: 'bold'
+          }}>
+            Buscar CEP
+        </Typography>  
+        <Typography 
+          sx={{
+            margin: '10px', 
+            fontSize: '16px'
+          }}>
+            Digite o CEP que deseja encontrar
+        </Typography>  
         <div>
           <TextField
             id="outlined"
@@ -68,7 +85,13 @@ function App() {
             sx={{margin: '5px'}}
           />
         </div>  
-        <Button onClick={searchCep} sx={{color:'#FFFF', margin: '10px', backgroundColor:'#696969'}}>
+        <Button 
+          onClick={searchCep} 
+          sx={{
+            color:'#FFFF', 
+            margin: '10px', 
+            backgroundColor:'#696969'
+          }}>
           <SearchIcon/>Buscar
         </Button>
       </Box>
@@ -76,30 +99,30 @@ function App() {
         {Object.keys(data).length > 1 && (
         <>
           <TextField
-              id="outlined"
-              label="Cep"
-              sx={{margin: '8px'}}
-              value={data.code}/>
+            id="outlined"
+            label="Cep"
+            sx={{margin: '8px'}}
+            value={data.code}/>
           <TextField
-                id="outlined"
-                label="Endereço"
-                sx={{margin: '8px'}}
-                value={data.address}/>
+            id="outlined"
+            label="Endereço"
+            sx={{margin: '8px'}}
+            value={data.address}/>
           <TextField
-                id="outlined"
-                label="Bairro"
-                sx={{margin: '8px'}}
-                value={data.district}/>
+            id="outlined"
+            label="Bairro"
+            sx={{margin: '8px'}}
+            value={data.district}/>
           <TextField
-                id="outlined"
-                label="Cidade"
-                sx={{margin: '8px'}}
-                value={data.city}/>
+            id="outlined"
+            label="Cidade"
+            sx={{margin: '8px'}}
+            value={data.city}/>
           <TextField
-                id="outlined"
-                label="UF"
-                sx={{margin: '8px'}}
-                value={data.state}/>
+            id="outlined"
+            label="UF"
+            sx={{margin: '8px'}}
+            value={data.state}/>
         </>        
       )}
       </Box>
